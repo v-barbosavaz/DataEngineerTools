@@ -1,11 +1,16 @@
-# -*- coding: utf-8 -*-
 import scrapy
 from scrapy import Request
-from ..items import ArticleItem
+
+
 class LemondeSpider(scrapy.Spider):
     name = "lemonde"
     allowed_domains = ["www.lemonde.fr"]
     start_urls = ['https://www.lemonde.fr']
+
+    custom_settings = {
+            "HTTPCACHE_ENABLED":True,
+            "CONCURRENT_REQUESTS_PER_DOMAIN":100
+        }
 
     def parse(self, response):
         title = response.css('title::text').extract_first()
@@ -19,22 +24,13 @@ class LemondeSpider(scrapy.Spider):
 
     def parse_category(self, response):
         for article in response.css(".fleuve")[0].css("article"):
-            title = article.css("h3 a::text").extract_first()
+            title = self.clean_spaces(article.css("h3 a::text").extract_first())
             image = article.css("img::attr(data-src)").extract_first()
             description = article.css(".txt3::text").extract_first()
-            #yield {
-            #    "title":title,
-            #    "image":image,
-            #    "description":description
-            #}
+            yield {
+                "title":title,
+                "image":image,
+                "description":description
+            }
 
-            yield ArticleItem(
-                title=title,
-                image=image,
-                description=description
-            )
 
-    def clean_spaces(self, string):
-        if string:
-            return " ".join(string.split())
-            
