@@ -1,8 +1,5 @@
-.. raw:: html
-
-    <font color="blue">Blue word,</font>
-
-And a word without color
+.. code:: python
+    print "Hello World"
 
 =======
 MongoDB
