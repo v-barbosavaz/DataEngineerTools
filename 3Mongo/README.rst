@@ -175,6 +175,11 @@ Les collections correspondent aux tables en SQL. Elles sont des sous-ensembles d
     db.createCollection(<YOUR_COLLECTION_NAME>)
     show collections
     
+
+À vous de jouer !
+
+Créez une collection USER.
+
 Comme pour les databases on peut vouloir supprimer définitivement une collection.
 
 .. code-block:: bash
