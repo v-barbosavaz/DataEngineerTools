@@ -1,3 +1,7 @@
+.. role:: red
+
+:red:`test - this text should be red`
+
 =======
 MongoDB
 =======
@@ -176,9 +180,7 @@ Les collections correspondent aux tables en SQL. Elles sont des sous-ensembles d
     show collections
     
 
-.. role:: red
 
-:red:`test - this text should be red`
 
 À vous de jouer !
 
