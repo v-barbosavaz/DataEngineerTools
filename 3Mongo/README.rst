@@ -1,6 +1,6 @@
-.. role:: red
+.. raw:: html
 
-:red:`test - this text should be red`
+    <style> .red {color:red} </style>
 
 =======
 MongoDB
