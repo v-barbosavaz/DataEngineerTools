@@ -176,6 +176,10 @@ Les collections correspondent aux tables en SQL. Elles sont des sous-ensembles d
     show collections
     
 
+.. role:: red
+
+An example of using :red:`interpreted text`
+
 À vous de jouer !
 
 Créez une collection USER.
