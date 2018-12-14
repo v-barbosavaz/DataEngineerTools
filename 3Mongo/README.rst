@@ -176,9 +176,9 @@ Les collections correspondent aux tables en SQL. Elles sont des sous-ensembles d
     show collections
     
 
-.. role:: red
+    .. role:: red
 
-    An example of using :red:`interpreted text`
+    This text is :red:`colored red` and so is :red:`this`
 
 À vous de jouer !
 
