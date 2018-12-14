@@ -1,5 +1,4 @@
 .. raw:: html
-
     <style> .red {color:red} </style>
 
 =======
