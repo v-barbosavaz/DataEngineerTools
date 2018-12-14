@@ -1,6 +1,3 @@
-.. code:: python
-    print "Hello World"
-
 =======
 MongoDB
 =======
