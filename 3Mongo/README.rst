@@ -178,7 +178,7 @@ Les collections correspondent aux tables en SQL. Elles sont des sous-ensembles d
 
 .. role:: red
 
-This text is :red:`colored red` and so is :red:`this`
+    This text is :red:`colored red` and so is :red:`this`
 
 À vous de jouer !
 
