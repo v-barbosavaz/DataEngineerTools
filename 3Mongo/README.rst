@@ -1,5 +1,8 @@
 .. raw:: html
-    <style> .red {color:red} </style>
+
+    <font color="blue">Blue word,</font>
+
+And a word without color
 
 =======
 MongoDB
